@@ -3,29 +3,60 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Unbenanntes Dokument</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
 	</head>
 
 	<body>
+		<h1>Formular</h1>
 		<form action="">
 			<div id="personal-information">
-				<div id="password">
+				<div id="names">
+					<h3>Vorname</h3>
 					<input type="text" id="first-name">
+					<h3>Nachname</h3>
 					<input type="text" id="last-name">
 				</div>
 				<div id="passwords">
+					<h3>Passwort</h3>
 					<input type="text" id="password">
+					<h3>Passwort bestätigen</h3>
 					<input type="text" id="password-confirm">
 				</div>
 			</div>
 			
 			<div id="contact">
+				<h3>Email</h3>
 				<input type="text" id="email">
+				<h3>Email erneut eingeben</h3>
 				<input type="text" id="email-confirm">
+				<h3>Telefonnummer</h3>
 				<input type="text" id="phone-number">
 			</div>
 			
-			<div id="birthday">
-				
+			<div id="other-info">
+				<h3>Gerburtsdatum</h3>
+				<input type="date" id="birthday">
+				<div id="gender">
+					<div>
+						<h3>Male</h3>
+						<input type="radio" name="gender" class="genders"> 
+					</div>
+					
+					<div>
+						<h3>Female</h3>
+						<input type="radio" name="gender" class="genders"> 
+					</div>
+					
+					<div>
+						<h3>Other</h3>
+						<input type="radio" name="gender" class="genders"> 
+					</div>
+				</div>
+			</div>
+			
+			<div id="submit">
+				<div>submit</div>
 			</div>
 		</form>
 	</body>
